@@ -1,3 +1,4 @@
+const {createUserProfiles} = require('./userInfo.js')
 
 function processArray(numbers) {
 
@@ -46,3 +47,7 @@ console.log("New array is: ", result)
 const stringsArray = ["One", "Two", "Four", "Five", "Seven",];
 const formattedResult = formatArrayStrings(stringsArray, result);
 console.log("Formatted string array: ",formattedResult)
+
+
+const userProfiles = createUserProfiles(stringsArray, formattedResult);
+console.log("User Profiles: ",userProfiles)
